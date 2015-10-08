@@ -1,0 +1,201 @@
+<!DOCUTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>TOP GUN Introduction</title>
+
+
+
+
+
+
+  <link href="css/style.css" rel="stylesheet">
+
+  <script src="js/jquery-1.11.2.min.js"></script>
+
+  <script src="js/button.js"></script>
+
+
+
+
+  
+  
+  
+  
+  <meta http-equiv="refresh" content="8;URL=index.html">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  <style>
+    /*  フォント設定*/
+    
+    @font-face {
+      font-family: "myFont";
+      src: url("font/KGTenThousandReasons.eot") format('eot'), url("font/KGTenThousandReasons.woff") format('woff');
+    }
+    
+    .myFontClass {
+      font-family: "myFont";
+    }
+
+  </style>
+
+
+
+
+
+
+  <style>
+    /*    黒板*/
+    
+    body {
+      background-image: url(images/blackboad.png);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-color: bisque;
+    }
+    
+    #gallery {
+      /*       position: relative;*/
+      width: 100%;
+    }
+
+  </style>
+
+
+
+
+
+
+
+
+
+
+  <body>
+
+
+
+<!--    <p>サンプル文字列は「<span class="myFontClass">DESIGN UNIT</span>」です。</p>-->
+
+
+
+
+
+
+
+    <div id="word" class="myFontClass">
+      <a href="index.html">
+        <p class="split">DESIGN UNIT
+          <br><span class="topgun">TOP GUN</span>
+        </p>
+      </a>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!--  一文字づつ表示-->
+    <style>
+      #word {
+        margin: 10% 10%;
+        width: 70vw;
+        font-size: 400%;
+        text-align: center;
+      }
+      
+      #word a {
+/*        color: #fff;*/
+            color: rgba(255,255,255,0.9);  
+/*        opacity: 0.1;*/
+        text-decoration: none;
+      }
+      
+      #word .topgun {
+        font-size: 240%;
+      }
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      .textSplitLoad {
+        display: none;
+      }
+      
+      .split {
+        visibility: hidden;
+      }
+
+    </style>
+
+
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+      $(function() {
+        var setElm = $('.split'),
+          delaySpeed = 400,
+          fadeSpeed = 0;
+
+        setText = setElm.html();
+
+        setElm.css({
+          visibility: 'visible'
+        }).children().addBack().contents().each(function() {
+          var elmThis = $(this);
+          if (this.nodeType == 3) {
+            var $this = $(this);
+            $this.replaceWith($this.text().replace(/(\S)/g, '<span class="textSplitLoad">$&</span>'));
+          }
+        });
+        $(window).load(function() {
+          splitLength = $('.textSplitLoad').length;
+          setElm.find('.textSplitLoad').each(function(i) {
+            splitThis = $(this);
+            splitTxt = splitThis.text();
+            splitThis.delay(i * (delaySpeed)).css({
+              display: 'inline-block',
+              opacity: '0'
+            }).animate({
+              opacity: '1'
+            }, fadeSpeed);
+          });
+          setTimeout(function() {
+            setElm.html(setText);
+          }, splitLength * delaySpeed + fadeSpeed);
+        });
+      });
+
+    </script>
+
+
+
+  </body>
+
+</html>

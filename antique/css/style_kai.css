@@ -1,0 +1,411 @@
+  @charset "utf-8";
+  body {
+    background-color: beige;
+    margin: 0;
+  }
+  #header {
+    width: 100% height: 50px;
+    /*  background-color: #556B2F;*/
+/*
+  #header a:hover{
+	background-position:0 -60px;
+}
+*/
+  }
+  #header img {
+    display: block;
+    margin: 0 auto;
+    padding: 5px 0;
+  }
+
+
+
+/*
+  #menu {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: beige;
+  }
+*/
+
+
+
+/*
+  #menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline;
+  }
+  #menu ul li {
+    display: inline-block;
+  }
+  #menu ul li a {
+    text-decoration: none;
+    color: #B8860B;
+    display: inline-block;
+    line-height: 40px;
+    width: 120px;
+    padding: 0 30px 0 30px;
+    text-align: center;
+  }
+*/
+
+
+
+
+
+/*
+#menu ul li a:hover {
+    background-color: #B8860B;
+    color: beige;
+    -webkit-transition: .8s;
+    transition: .8s;
+    border-radius: 25px 25px;
+  
+  
+  }
+*/
+
+
+
+
+/*
+#menu ul li a::after {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-transform: scale(.5);
+	transform: scale(.5);
+}
+#menu ul li a:hover::after {
+	background: #333;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+*/
+
+
+
+
+
+    /*    共通CSS*/
+    
+    .button {
+      display: inline-block;
+      width: 120px;
+      height: 54px;
+      text-align: center;
+      text-decoration: none;
+      line-height: 54px;
+      outline: none;
+      border-radius: 25px 25px;
+    }
+    
+    .button::before,
+    .button::after {
+      position: absolute;
+      z-index: -1;
+      display: block;
+      content: '';
+    }
+    
+    .button,
+    .button::before,
+    .button::after {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-transition: all .4s;
+      transition: all .4s;
+    }
+    /*    ボタンの動作CSS*/
+    
+
+
+
+
+
+
+
+
+
+#menu {
+      text-align: center;
+      overflow: hidden;
+      /*
+      margin: auto auto;
+      padding: auto auto;
+*/
+    }
+    
+    #menu ul {
+      list-style-type: none;
+      /*          display: inline;*/
+    }
+    
+    #menu ul li {
+/*      float: left;*/
+          display: inline-block;
+    }
+
+    #menu ul li a{
+      margin: 0 30px;
+    }
+
+
+
+
+      
+      
+      
+      
+      
+      
+    
+    .button {
+      /*
+    display: block;
+    width: 200px;
+    height: 50px;
+*/
+      position: relative;
+      z-index: 2;
+      background-color: beige;
+      /*	border: 2px solid #333;*/
+      border: none;
+      /*      color: aquamarine;*/
+      color: #B8860B;
+      line-height: 50px;
+      overflow: hidden;
+    }
+    
+    .button:hover {
+      color: beige;
+    }
+    
+    .button::after {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      -webkit-transform: scale(.5);
+      transform: scale(.5);
+    }
+    
+    .button:hover::after {
+      background: #B8860B;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      border-radius: 30px 30px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  #contents {
+    min-height: 400px;
+  }
+
+#contents {
+  min-height: calc(100% - 430px);
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+#contents * {
+  margin: 0;
+}
+#contents h1 {
+  margin-bottom: 10px;
+}
+
+  #footer {
+    width: 100%;
+    height: 220px;
+    background-color: #556B2F;
+    color: beige;
+    /*  float: left;*/
+  }
+
+
+
+
+  #footer address {
+    margin: 0 20px 0 20px;
+    padding-left: 20px;
+  }
+  #footer p {
+    width: auto;
+    margin: 0 20px 0 20px;
+    padding-left: 20px;
+    clear: both;
+  }
+  #footer ul {
+    display: inline;
+    list-style-type: none;
+/*
+    margin-left: auto;
+    margin-right: auto;
+*/
+    padding: 0;
+    overflow: hidden;
+  }
+  #footer ul li {
+    margin:14px auto 14px auto;
+    width: 140px;
+    display: inline-block;
+  }
+  #footer ul li a {
+    height: 30px;
+    padding-top: 10px;
+    overflow: hidden;
+    font-size: 80%;
+  }
+  #footer a {
+    text-decoration: none;
+    color: beige;
+  }
+  #footer a:hover {
+    text-decoration: underline;
+  }
+  .hero {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /*
+    display: block;
+  margin: 0 auto;
+  padding: 45px 0;
+*/
+  }
+  .back {
+    float: right;
+    margin-top: 25px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-size: 120%
+  }
+  .footer_nav {
+    text-align: center;
+  }
+  .map {
+    text-align: center;
+  }
+
+
+
+
+
+
+
+
+
+/* product.html用 */
+#product #contents ul {
+  padding: 0;
+  overflow: hidden;
+  list-style-type: none;
+}
+#product #contents ul li {
+  float: left;
+  margin: 20px;
+}
+#product #contents ul li figure {
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  height: 220px;
+  border-radius: 15px 15px;
+}
+#product #contents ul li figcaption {
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 60px;
+  background: rgba(0,0,0,.6);
+  -webkit-transition: .5s;
+  transition: .5s;
+  text-align: center; 
+  line-height: 60px;
+  color: beige;
+  font-size: 70%;
+}
+#product #contents ul li figure:hover figcaption {
+  bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* form.html用 */
+#form #contents form {
+  margin: 50px 0;
+  width: 500px;
+}
+#form #contents form label {
+  display: block;
+  width: 170px;
+  float: left;
+}
+#form #contents form input[type="text"],
+#form #contents form input[type="email"],
+#form #contents form input[type="submit"],
+#form #contents form textarea {
+  box-sizing: border-box;
+  width: 300px;
+  clear: both;
+}
+#form #contents form input[type="submit"] {
+  width: 150px;
+}
+
+
+
+
+
+.border_radius {
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+}

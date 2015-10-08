@@ -1,0 +1,187 @@
+/*
+#nav ul {
+text-decoration-line: none;
+  
+  overflow: hidden;
+}
+
+#nav ul li a {
+  float: left;
+  color: red;
+}
+*/
+
+#nav {
+  text-align: center;
+  overflow: hidden;
+  margin-top: 20px;
+}
+#nav ul {
+  list-style-type: none;
+}
+#nav ul li {
+  display: inline-block;
+}
+#nav ul li a {
+  margin: 100px 50px;
+  padding: auto;
+  text-decoration: none;
+  color: #fff;
+}
+#nav ul li a:hover {
+  color: red;
+}
+#main {
+  margin: 30% 10%;
+}
+#main h1,
+p {
+  color: red;
+}
+#main a {
+  color: red;
+  text-decoration: none;
+  text-shadow: #fff;
+}
+#concept {
+  margin: 30% 10%;
+}
+#concept h3 {
+  color: red;
+  font-size: 160%;
+  margin-bottom: 20px;
+}
+#concept p {
+  font-size: 120%;
+  color: #000;
+}
+#works {
+  margin: 30% 10%;
+  text-align: center;
+}
+#works h1 {
+  color: red;
+  font-size: 160%;
+  margin-bottom: 20px;
+}
+#profile {
+  margin: 10% 10%;
+}
+#profile h3 {
+  color: red;
+  font-size: 160%;
+  margin-bottom: 20px;}
+
+/*
+#hero {
+  float: left;
+  width: 80%;
+  margin: auto 10%;
+}
+*/
+
+
+/*戻るボタン*/
+
+#page-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 40%;
+}
+
+/*ゆきだるま*/
+
+#page-top a {
+  margin-top: 90px;
+  background-image: url(../images/snowman.png);
+  background-repeat: no-repeat;
+  /*  background: #fff;*/
+  text-decoration: none;
+  color: red;
+  width: 93px;
+  height: 118px;
+  padding: 30px 0;
+  text-align: center;
+  display: block;
+  line-height: 100px;
+  /*  border-radius: 45px;*/
+}
+#page-top a:hover {
+  background-image: url(../images/snowmanred.png);
+  background-repeat: no-repeat;
+  text-decoration: none;
+  color: #fff;
+  /*  background: red;*/
+  opacity: 0.4;
+}
+
+/*ゆきだるまここまで*/
+
+
+/*
+#page-top a {
+  background: #fff;
+  text-decoration: none;
+  color: red;
+  width: 72px;
+  padding: 30px 0;
+  text-align: center;
+  display: block;
+  border-radius: 45px;
+}
+*/
+
+
+/*
+#page-top a:hover {
+  text-decoration: none;
+  color: #fff;
+  background: red;
+  opacity: 0.6;
+}
+*/
+
+
+/*フォーム関係*/
+
+#contact {
+  margin: 10% 10%;
+  color: #fff;
+}
+#contact form {
+  margin: 50px 0;
+  width: 90%;
+}
+#contact form label {
+  display: block;
+  width: 90%;
+  float: left;
+}
+#contact form input[type="text"],
+#contact form input[type="email"],
+#contact form input[type="submit"],
+#contact form textarea {
+  box-sizing: border-box;
+  width: 90%;
+  clear: both;
+}
+#contact form input[type="submit"] {
+  width: 150px;
+}
+
+/*リンク*/
+
+#footer {
+margin-top: 30%;
+}
+
+#links {
+  font-size: 160%;
+  text-align: center;
+}
+
+#links p a {
+  text-decoration: none;
+}
+

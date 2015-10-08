@@ -1,0 +1,341 @@
+<!DOCUTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>銀世界・Silvery snowacape</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="css/common_snow.css" />
+
+  <script src="js/snow.js"></script>
+  <script src="js/common.js"></script>
+
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/button.js"></script>
+
+
+
+
+
+
+
+
+
+
+  <!--  ローディング-->
+  <style>
+    /*
+      body {
+              animation: slide 10s infinite;
+      }
+*/
+    
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+    }
+    
+    #loading {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      animation: fadeout 1s 2s both;
+      /*      animation-name: fadeout;*/
+      animation-duration: 3s;
+      animation-delay: 4.5s;
+      animation-fill-mode: both;
+      background-color: silver;
+    }
+    
+    @keyframes fadeout {
+      from {
+        opacity: 1;
+      }
+      to {
+        opacity: 0;
+        visibility: hidden
+      }
+    }
+    
+    #message {
+      width: 200px;
+      height: 200px;
+      background-color: #fff;
+      margin: calc(50vh - 100px) auto;
+      text-align: center;
+      line-height: 200px;
+      font-size: 125%;
+      color: silver;
+      animation: kaiten 9s infinite;
+    }
+    
+    @keyframes kaiten {
+      0% {
+        transform: rotate(0deg);
+        border-radius: 50px 50px
+      }
+      10% {
+        transform: rotate(30deg);
+        border-radius: 50px 50px
+      }
+      20% {
+        transform: rotate(-30deg);
+        border-radius: 70px 70px
+      }
+      30% {
+        transform: rotate(40deg);
+        border-radius: 75px 75px
+      }
+      40% {
+        transform: rotate(-40deg);
+        border-radius: 95px 95px
+      }
+      50% {
+        transform: rotate(60deg);
+        border-radius: 100px 100px;
+      }
+      75% {
+        transform: rotate(-65deg);
+        border-radius: 100px 100px;
+      }
+      100% {
+        transform: rotate(0deg);
+        border-radius: 100px 100px;
+      }
+      /*      100%{transform: rotate(0deg);}*/
+    }
+    /*
+    h1 {
+      transition: ;
+    }
+*/
+    
+    body {
+      animation-duration: 10s;
+      animation-name: slidein;
+      animation-iteration-count: 1;
+      /*  animation-iteration-count: infinite;*/
+    }
+    
+    @keyframes slidein {
+      from {
+        margin-left: 100%;
+        width: 300%
+      }
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+    }
+
+  </style>
+
+  <!--  ローディングローディング終了-->
+
+
+
+
+</head>
+
+
+
+
+
+<body>
+  <div id="wrapper">
+
+
+
+    <div id="nav">
+      <ul>
+        <li><a class="" href="#concept">CONCEPT</a></li>
+        <li><a class="" href="#works">WORKS</a></li>
+        <li><a class="" href="#profile">PROFILE</a></li>
+        <li><a class="" href="#contact">CONTACT</a></li>
+        <li><a class="" href="#links">LINKS</a></li>
+
+      </ul>
+    </div>
+
+
+
+
+
+
+
+
+    <div id="loading">
+      <div id="message">
+        <h1>銀世界</h1></div>
+    </div>
+
+    <div id="main">
+      <a><img src="images/titlerogo.png"></a>
+      <a><img src="images/titlerogo2.png"></a>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <a href="#"><h1>銀世界はあなたを応援したい東北発のデザイン室です</h1></a>
+    </div>
+
+
+    <!--  ローディング終了-->
+
+
+
+    <div id="concept">
+      <p>
+        <h3>私たちは復興のためにも頑張っております。</h3></p>
+      <p>東日本大震災で元気を失った方も数多くおられることだと思います。</p>
+      <p>そのような中で私たちは少しでも人々に元気を差し出すことができればと、</p>
+      <p>各種デザインで頑張っております。</p>
+      <p></p>
+      <p>東北ならではの『ほっこり』したデザインはいかがでしょうか。</p>
+      <p></p>
+
+
+    </div>
+
+
+
+
+
+    <div id="works">
+      <p>
+        <h1>WORKSは<br>ただいま<br>工事中です。</h1></p>
+      <p>
+        <img src="images/snowman_met.png">
+        <h1>しばらくお待ちくださいませ。</h1></p>
+      </p>
+    </div>
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+
+
+
+
+
+    <div id="profile">
+
+      <p>
+        <h3>銀世界<br>Silvery snowacape</h3></p>
+      <p>
+        <h4>株式会社銀世界</h4></p>
+      <adress>〒xxx-xxxx
+        <br>青森県八戸市x-x-x
+        <br>TEL：0178-xxx-xxxx&nbsp;FAX：0178-xxx-xxxx</adress>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div id="contact">
+
+      <h2>お問い合わせ</h2>
+      <p> ご質問や、ご意見、ご希望など、なんでもお気軽にご連絡下さい。
+        <br> 「お名前」、「メールアドレス」、「ご質問・ご意見・ご希望」とも、全て必須事項ですので、ご記入宜しくお願いします。
+      </p>
+      <br>
+
+
+      <form action="#">
+        <label for="name">お名前</label>
+        <input id="name" name="name" type="text" placeholder="お名前を入力してください">
+        <br>
+        <br>
+        <label for="mail">メールアドレス</label>
+        <input id="mail" name="mail" type="email" placeholder="example@bungu.com">
+        <br>
+        <br>
+        <label for="description">詳細</label>
+        <textarea id="description" name="description" rows="5" placeholder="ご質問・ご意見・ご希望などの詳細を記入してください。"></textarea>
+
+        <label>&nbsp;</label>
+        <br>
+        <br>
+        <input type="submit" value="送信">
+      </form>
+
+    </div>
+
+
+
+
+
+
+
+
+    <div id="footer">
+
+      <div id="links">
+        <h4>LINKS</h4></p>
+        <p><a href="../designunit/introduction.html">DESIGN UNIT TOP GUN</a></p>
+        <p><a href="../osamu's_works/top.html">osamu's works</a></p>
+        <p><a href="../rattle/rattle_index.html">RATTLE</a></p>
+
+      </div>
+
+
+    </div>
+
+
+
+
+    <!--  ページトップボタン-->
+    <p id="page-top"><a href="#wrapper">PAGE TOP</a></p>
+
+</body>
+
+
+</html>

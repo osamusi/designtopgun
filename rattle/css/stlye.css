@@ -1,0 +1,178 @@
+head,
+body {
+  background-color: #000;
+}
+body #mainindex {
+  width: 100%;
+  /*
+width: 1024px;
+  height: 768px;
+*/
+  text-align: center;
+}
+
+/*戻るボタン*/
+
+#page-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 50%;
+  height: 120px;
+}
+
+/*rattle_button*/
+
+#page-top a {
+  /*  margin-top: 90px;*/
+  background-image: url(../images/rattle_rogo.png);
+  background-repeat: no-repeat;
+  /*  background: #fff;*/
+  text-decoration: none;
+  color: silver;
+  width: 111px;
+  height: 120px;
+  padding: 30px 0;
+  text-align: center;
+  display: block;
+  line-height: 150px;
+  /*  border-radius: 45px;*/
+}
+#page-top a:hover {
+  background-image: url(../images/rattle_rogo.png);
+  background-repeat: no-repeat;
+  text-decoration: none;
+  color: red;
+  /*  background: red;*/
+  opacity: 0.5;
+}
+
+/*rattle_buttonここまで*/
+
+
+
+
+
+
+
+
+/*contact TOPボタン*/
+
+
+/*ボタン共通*/
+
+.button {
+  display: inline-block;
+  width: 140px;
+  height: 140px;
+  text-align: center;
+  text-decoration: none;
+  /*    line-height: 50%;*/
+  outline: none;
+  border-radius: 140px;
+}
+.button::before,
+.button::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+.button,
+.button::before,
+.button::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+/*    ボタンの動作CSS*/
+
+.button {
+  /*
+    display: block;
+    width: 200px;
+    height: 50px;
+*/
+  position: relative;
+  z-index: 2;
+  background-color: silver;
+  /*	border: 2px solid #333;*/
+  border: none;
+  /*      color: aquamarine;*/
+  color: #fff;
+  line-height: 50px;
+  overflow: hidden;
+  /*  text-decoration: none;*/
+}
+.button:hover {
+  color: silver;
+}
+.button::after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(.3);
+  transform: scale(.3);
+}
+.button:hover::after {
+  background: #fff;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  border-radius: 140px 140px;
+}
+#nav_contact ul {
+  display: inline-block;
+}
+#nav_contact ul a {
+  text-align: center;
+  line-height: 150%;
+  padding-top: 20%;
+}
+
+
+
+
+
+/*フォーム関係*/
+
+#contact {
+  margin: 10% 10%;
+  color: #fff;
+}
+#contact form {
+  margin: 50px 0;
+  width: 90%;
+}
+#contact form label {
+  display: block;
+  width: 90%;
+  float: left;
+}
+#contact form input[type="text"],
+#contact form input[type="email"],
+#contact form input[type="submit"],
+#contact form textarea {
+  box-sizing: border-box;
+  width: 90%;
+  clear: both;
+}
+#contact form input[type="submit"] {
+  width: 150px;
+}
+
+
+
+
+
+
+
+
+/*LINKS*/
+
+#links p {
+text-align: center;
+}
